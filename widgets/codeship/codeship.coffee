@@ -1,7 +1,7 @@
 class Dashing.Codeship extends Dashing.Widget
 
   @accessor 'status', ->
-    if @get('current') == "success" then 'icon-check-sign'
-    else if @get('current') == "error" then 'icon-ban-circle'
-    else if @get('current') == "waiting" then 'icon-pause'
-    else if @get('current') == "testing" then 'icon-cog'
+    if @get('current') == "success" then 'fa fa-check-square-o'
+    else if @get('current') == "error" then 'fa fa-ban'
+    else if @get('current') == "waiting" then 'fa fa-pause'
+    else if @get('current') == "testing" then 'fa fa-cog'
